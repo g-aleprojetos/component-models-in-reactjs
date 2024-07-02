@@ -11,8 +11,8 @@ section {
 
 .Sun {
   position: absolute;
-  height: 90px;
-  width: 90px;
+  height: 81px;
+  width: 81px;
   background-image: radial-gradient(#f09819, #ff512f);
   border-radius: 50%;
   box-shadow: -4px 2px 56px Orange;
@@ -30,8 +30,8 @@ section {
 
 .Mercury {
   position: absolute;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
   top: 44%;
   left: 44%;
@@ -41,23 +41,23 @@ section {
 }
 
 .Mercury-Orbit {
-  height: 112px;
-  width: 112px;
+  height: 100px;
+  width: 100px;
 }
 
 @keyframes orbital1 {
   0% {
-    transform: rotate(0deg) translateX(56px) rotate(0deg);
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(56px) rotate(-360deg);
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
   }
 }
 
 .Venus {
   position: absolute;
-  height: 21px;
-  width: 21px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   top: 43%;
   left: 43%;
@@ -67,23 +67,23 @@ section {
 }
 
 .Venus-Orbit {
-  height: 156px;
-  width: 156px;
+  height: 140px;
+  width: 140px;
 }
 
 @keyframes orbital2 {
   0% {
-    transform: rotate(0deg) translateX(78px) rotate(0deg);
+    transform: rotate(0deg) translateX(71px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(78px) rotate(-360deg);
+    transform: rotate(360deg) translateX(71px) rotate(-360deg);
   }
 }
 
 .Earth {
   position: absolute;
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
   border-radius: 50%;
   top: 44%;
   left: 44%;
@@ -93,22 +93,22 @@ section {
 }
 
 .Earth-Orbit {
-  height: 224px;
-  width: 224px;
+  height: 203px;
+  width: 203px;
 }
 
 @keyframes orbital3 {
   0% {
-    transform: rotate(0deg) translateX(112px) rotate(0deg);
+    transform: rotate(0deg) translateX(103px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(112px) rotate(-360deg);
+    transform: rotate(360deg) translateX(103px) rotate(-360deg);
   }
 }
 
 .Moon-Orbit {
-  height: 34px;
-  width: 34px;
+  height: 29px;
+  width: 29px;
   position: relative;
   border-radius: 50%;
   background: transparent;
@@ -119,32 +119,30 @@ section {
 
 .Moon {
   position: absolute;
-  height: 7px;
-  width: 7px;
+  height: 5px;
+  width: 5px;
   border-radius: 50%;
-  top: 44%;
-  left: 44%;
-  transform: translate(-50%, -50%);
-  box-shadow: -4px 2px 56px white;
   top: 42%;
   left: 42%;
+  transform: translate(-50%, -50%);
+  box-shadow: -4px 2px 56px white;
   animation: orbital-M 4s linear infinite;
   background: white;
 }
 
 @keyframes orbital-M {
   0% {
-    transform: rotate(0deg) translateX(18px) rotate(0deg);
+    transform: rotate(0deg) translateX(16px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(18px) rotate(-360deg);
+    transform: rotate(360deg) translateX(16px) rotate(-360deg);
   }
 }
 
 .Mars {
   position: absolute;
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   top: 47%;
   left: 47%;
@@ -160,23 +158,23 @@ section {
 }
 
 .Mars-Orbit {
-  height: 300px;
-  width: 300px;
+  height: 270px;
+  width: 270px;
 }
 
 @keyframes orbital4 {
   0% {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    transform: rotate(0deg) translateX(135px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    transform: rotate(360deg) translateX(135px) rotate(-360deg);
   }
 }
 
 .Jupiter {
   position: absolute;
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   top: 46%;
   left: 46%;
@@ -193,23 +191,23 @@ section {
 }
 
 .Jupiter-Orbit {
-  height: 374px;
-  width: 374px;
+  height: 336px;
+  width: 336px;
 }
 
 @keyframes orbital5 {
   0% {
-    transform: rotate(0deg) translateX(187px) rotate(0deg);
+    transform: rotate(0deg) translateX(168px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(187px) rotate(-360deg);
+    transform: rotate(360deg) translateX(168px) rotate(-360deg);
   }
 }
 
 .Saturn {
   position: absolute;
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
   border-radius: 50%;
   top: 47%;
   left: 47%;
@@ -225,23 +223,23 @@ section {
 }
 
 .Saturn-Orbit {
-  height: 472px;
-  width: 472px;
+  height: 424px;
+  width: 424px;
 }
 
 @keyframes orbital6 {
   0% {
-    transform: rotate(0deg) translateX(236px) rotate(0deg);
+    transform: rotate(0deg) translateX(212px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(236px) rotate(-360deg);
+    transform: rotate(360deg) translateX(212px) rotate(-360deg);
   }
 }
 
 .Saturn-Ring {
   position: relative;
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
   top: -17%;
   left: -17%;
@@ -251,8 +249,8 @@ section {
 
 .Uranus {
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   top: 47.5%;
   left: 47.5%;
@@ -262,23 +260,23 @@ section {
 }
 
 .Uranus-Orbit {
-  height: 564px;
-  width: 564px;
+  height: 507px;
+  width: 507px;
 }
 
 @keyframes orbital7 {
   0% {
-    transform: rotate(0deg) translateX(282px) rotate(0deg);
+    transform: rotate(0deg) translateX(254px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(282px) rotate(-360deg);
+    transform: rotate(360deg) translateX(254px) rotate(-360deg);
   }
 }
 
 .Neptune {
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   top: 48%;
   left: 48%;
@@ -294,15 +292,15 @@ section {
 }
 
 .Neptune-Orbit {
-  height: 630px;
-  width: 630px;
+  height: 567px;
+  width: 567px;
 }
 
 @keyframes orbital8 {
   0% {
-    transform: rotate(0deg) translateX(315px) rotate(0deg);
+    transform: rotate(0deg) translateX(285px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(315px) rotate(-360deg);
+    transform: rotate(360deg) translateX(285px) rotate(-360deg);
   }
 }
