@@ -1,0 +1,306 @@
+section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.Sun {
+  position: absolute;
+  height: 81px;
+  width: 81px;
+  background-image: radial-gradient(#f09819, #ff512f);
+  border-radius: 50%;
+  box-shadow: -4px 2px 56px Orange;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Orbit {
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dotted #ddd9;
+}
+
+.Mercury {
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  top: 44%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbital1 5s linear infinite;
+  background-image: radial-gradient(#504e51, #97979f, #ceccd1, #b5a7a7);
+}
+
+.Mercury-Orbit {
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes orbital1 {
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+.Venus {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  top: 43%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  animation: orbital2 9s linear infinite;
+  background-image: radial-gradient(#8b91a1, #bbb7ab, #ddd8d4, #efefef);
+}
+
+.Venus-Orbit {
+  height: 140px;
+  width: 140px;
+}
+
+@keyframes orbital2 {
+  0% {
+    transform: rotate(0deg) translateX(71px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(71px) rotate(-360deg);
+  }
+}
+
+.Earth {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  top: 44%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  animation: orbital3 13s linear infinite;
+  background: blue;
+}
+
+.Earth-Orbit {
+  height: 203px;
+  width: 203px;
+}
+
+@keyframes orbital3 {
+  0% {
+    transform: rotate(0deg) translateX(103px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(103px) rotate(-360deg);
+  }
+}
+
+.Moon-Orbit {
+  height: 29px;
+  width: 29px;
+  position: relative;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.8px dotted #ddd9;
+  top: -20%;
+  left: -20%;
+}
+
+.Moon {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  top: 42%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  box-shadow: -4px 2px 56px white;
+  animation: orbital-M 4s linear infinite;
+  background: white;
+}
+
+@keyframes orbital-M {
+  0% {
+    transform: rotate(0deg) translateX(16px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(16px) rotate(-360deg);
+  }
+}
+
+.Mars {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 47%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  animation: orbital4 11s linear infinite;
+  background-image: radial-gradient(
+    #99857a,
+    #c6785c,
+    #e27858,
+    #ff9d6f,
+    #8e6a5a
+  );
+}
+
+.Mars-Orbit {
+  height: 270px;
+  width: 270px;
+}
+
+@keyframes orbital4 {
+  0% {
+    transform: rotate(0deg) translateX(135px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(135px) rotate(-360deg);
+  }
+}
+
+.Jupiter {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  top: 46%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  animation: orbital5 7s linear infinite;
+  background-image: radial-gradient(
+    #404436,
+    #a79c86,
+    #d2cfda,
+    #d39c7e,
+    #90614d,
+    #c88b3a
+  );
+}
+
+.Jupiter-Orbit {
+  height: 336px;
+  width: 336px;
+}
+
+@keyframes orbital5 {
+  0% {
+    transform: rotate(0deg) translateX(168px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(168px) rotate(-360deg);
+  }
+}
+
+.Saturn {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  top: 47%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  animation: orbital6 13s linear infinite;
+  background-image: radial-gradient(
+    #343e47,
+    #787869,
+    #a49b72,
+    #c5ab6e,
+    #c3a171
+  );
+}
+
+.Saturn-Orbit {
+  height: 424px;
+  width: 424px;
+}
+
+@keyframes orbital6 {
+  0% {
+    transform: rotate(0deg) translateX(212px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(212px) rotate(-360deg);
+  }
+}
+
+.Saturn-Ring {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  top: -17%;
+  left: -17%;
+  border: 3.5px double #ddd9;
+  background: transparent;
+}
+
+.Uranus {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  top: 47.5%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  animation: orbital7 13s linear infinite;
+  background-image: radial-gradient(#d5fbfc, #bbe1e4, #93b8b3, #65868b);
+}
+
+.Uranus-Orbit {
+  height: 507px;
+  width: 507px;
+}
+
+@keyframes orbital7 {
+  0% {
+    transform: rotate(0deg) translateX(254px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(254px) rotate(-360deg);
+  }
+}
+
+.Neptune {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  animation: orbital8 18s linear infinite;
+  background-image: radial-gradient(
+    #212354,
+    #3e54e8,
+    #3e66f9,
+    #6081ff,
+    #89f3ff
+  );
+}
+
+.Neptune-Orbit {
+  height: 567px;
+  width: 567px;
+}
+
+@keyframes orbital8 {
+  0% {
+    transform: rotate(0deg) translateX(285px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(285px) rotate(-360deg);
+  }
+}

@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Login01 } from './pages/Login01/login01';
+import { SolarSystem } from './pages/SolarSystem/solarSystem';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Login01 />
+    <SolarSystem />
   </React.StrictMode>
 );
 
