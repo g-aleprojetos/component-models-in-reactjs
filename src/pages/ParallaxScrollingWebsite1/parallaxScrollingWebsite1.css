@@ -7,7 +7,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100wh;
+  height: 30px;
   padding: 30px 100px;
   z-index: 1000;
 }
@@ -51,15 +51,42 @@ main {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 90px);
   overflow: hidden;
 }
 
-#scene #text{
-    position: absolute;
-    color: #094b65;
-    font-family: AvertaStd-Regular, serif;
-    font-size: 8vw;
-    white-space: nowrap;
-    text-align: center;
+#scene #text {
+  position: absolute;
+  color: #094b65;
+  transform: translateY(100%);
+  font-family: "Rancho", cursive;
+  font-size: 8vw;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#scene img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #131e1e;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sec p {
+  color: #fff;
+  font-size: 1em;
 }
