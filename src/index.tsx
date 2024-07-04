@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { SolarSystem } from './pages/SolarSystem/solarSystem';
+import { ParallaxScrollingWebsite1 } from './pages/ParallaxScrollingWebsite1';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <SolarSystem />
+    <ParallaxScrollingWebsite1 />
   </React.StrictMode>
 );
 
