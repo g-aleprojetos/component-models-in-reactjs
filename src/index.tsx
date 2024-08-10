@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { ParallaxScrollingWebsite1 } from './pages/ParallaxScrollingWebsite1';
+import { DragAndDrop2 } from './pages/DragAndDrop2';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ParallaxScrollingWebsite1 />
+    <DragAndDrop2 />
   </React.StrictMode>
 );
 
