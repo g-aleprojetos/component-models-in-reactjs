@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxScrollingWebsite1 } from './pages/ParallaxScrollingWebsite1';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
