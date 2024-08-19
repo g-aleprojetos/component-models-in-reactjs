@@ -1,16 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import { ParallaxScrollingWebsite1 } from './pages/ParallaxScrollingWebsite1';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { DragAndDrop } from "./pages/DragAndDrop";
+import { DragAndDropProvider } from '../src/pages/DragAndDrop/context';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ParallaxScrollingWebsite1 />
+    <DragAndDropProvider>
+      <DragAndDrop />
+    </DragAndDropProvider>
   </React.StrictMode>
 );
 
