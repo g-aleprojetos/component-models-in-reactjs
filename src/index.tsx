@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { DragAndDrop } from "./pages/DragAndDrop";
 import { DragAndDropProvider } from '../src/pages/DragAndDrop/context';
+import { NavigationMenuIndicator1 } from "./pages/NavigationMenuIndicator1";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <DragAndDropProvider>
-      <DragAndDrop />
+      <NavigationMenuIndicator1 />
     </DragAndDropProvider>
   </React.StrictMode>
 );
