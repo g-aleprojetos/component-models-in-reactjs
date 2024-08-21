@@ -1,0 +1,112 @@
+
+section{
+  height: 100vh;
+  background: #232524;
+}
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+  left: 20px;
+  bottom: 30px;
+  width: 64px;
+  border-radius: 16px;
+  background-color: #21214c;
+  transition: width 0.4s;
+}
+
+.sidebar:hover {
+  width: 260px;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 14px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.header img{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "AvertaStd-Regular", serif;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.menu {
+  position: relative;
+  display: grid;
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 6px;
+  background: #6154f7;
+  transition: top 0.5s;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 56px;
+  width: 100%;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+}
+
+.menu button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.menu button:hover span,
+.menu button.active span {
+  opacity: 1;
+}
+
+.menu button:hover,
+.menu button.active {
+  background: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 1);
+}
+
+.menu button p {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.sidebar:hover .menu button p,
+.sidebar:hover .header h1 {
+  opacity: 1;
+}
