@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { DragAndDropProvider } from '../src/pages/DragAndDrop/context';
-import { Sidebar1 } from "./pages/Sidebar1";
+import { Header } from "./pages/Header";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <DragAndDropProvider>
-      <Sidebar1 />
+      <Header/>
     </DragAndDropProvider>
   </React.StrictMode>
 );
