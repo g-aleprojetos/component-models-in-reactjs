@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { DragAndDropProvider } from '../src/pages/DragAndDrop/context';
-import { Header } from "./pages/Header";
+import { DragAndDropProvider } from "../src/pages/DragAndDrop/context";
+import { GridButton } from "./pages/GridButton";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <DragAndDropProvider>
-      <Header/>
+      <GridButton />
     </DragAndDropProvider>
   </React.StrictMode>
 );
